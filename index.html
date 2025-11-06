@@ -4,26 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>YUHWA — Identité de marque & stratégie</title>
-  <meta name="description" content="Présentation complète de l'identité de marque YUHWA — positionnement, prisme de Kapferer, gamme, persona et processus de création." />
-  <!-- Tailwind CDN for quick prototype (prêt à déployer sur GitHub Pages) -->
+  <meta name="description" content="Présentation professionnelle : identité, positionnement, prisme de Kapferer, gamme et processus de création de YUHWA." />
+  <!-- Tailwind (CDN) pour prototype prêt à déployer -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Petite personnalisation pour le rendu */
-    :root {
-      --brand-ink: #27221f;
-      --brand-acc: #8a6f55;
-      --muted: #6b6b6b;
-      --paper: #fbfaf9;
+    :root{
+      --brand-ink:#27221f;
+      --brand-acc:#8a6f55;
+      --muted:#6b6b6b;
+      --paper:#fbfaf9;
     }
-    body { background: linear-gradient(180deg, #fbfaf9 0%, #fffaf7 100%); color: var(--brand-ink); font-feature-settings: "liga" 1; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1rem; }
-    .card { background: white; border-radius: 12px; box-shadow: 0 6px 22px rgba(34,34,34,0.06); }
-    .h1-serif { font-family: ui-serif, Georgia, "Times New Roman", Times, serif; letter-spacing: 0.08em; }
-    .muted { color: var(--muted); }
-    code { background:#f3f4f6; padding: 0.125rem 0.25rem; border-radius:4px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
-    /* Grid for Kapferer prism traditional layout */
-    .prism-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    @media (max-width: 768px) { .prism-grid { grid-template-columns: 1fr; } }
+    body{
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--brand-ink);
+      background: linear-gradient(180deg,#fbfaf9 0%,#fffaf7 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      margin:0;
+      padding:0;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:3rem 1rem;}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 22px rgba(34,34,34,0.06);}
+    .h1-serif{font-family: ui-serif, Georgia, "Times New Roman", Times, serif;letter-spacing:0.06em;}
+    .muted{color:var(--muted);}
+    .prism-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+    @media (max-width:900px){.prism-grid{grid-template-columns:1fr;}}
+    a.button{display:inline-block;padding:.5rem 1rem;border-radius:8px;text-decoration:none;border:1px solid #e5e7eb;}
+    .divider{height:1px;background:#eef2f6;margin:1.25rem 0;border-radius:2px;}
   </style>
 </head>
 <body>
@@ -32,43 +39,44 @@
     <header class="mb-8 text-center">
       <h1 class="text-5xl h1-serif font-normal mb-2">YUHWA <span class="text-base muted">유화</span></h1>
       <p class="text-lg muted italic mb-4">Soin coréen ultra-premium — équilibre entre héritage et science</p>
-      <div class="inline-flex items-center gap-4 bg-white p-3 rounded-full card">
-        <div>
-          <strong class="block text-sm muted">Slogan</strong>
+
+      <div class="inline-flex items-center gap-6 bg-white p-3 rounded-full card justify-center">
+        <div class="text-left">
+          <div class="text-xs muted">Slogan</div>
           <div class="text-lg font-medium">YUHWA — L'équilibre réinventé</div>
         </div>
-        <div class="h-px w-px bg-gray-200 mx-4"></div>
-        <div>
-          <strong class="block text-sm muted">5 mots-clés</strong>
+        <div style="width:1px;height:36px;background:#eef2f6"></div>
+        <div class="text-left">
+          <div class="text-xs muted">5 mots-clés</div>
           <div class="text-sm">Héritage • Équilibre • Raffinement • Science • Authenticité</div>
         </div>
       </div>
     </header>
 
-    <!-- Brand presentation -->
+    <!-- Présentation synthétique -->
     <section class="mb-8 card p-6">
-      <h2 class="text-2xl font-semibold mb-3">Présentation synthétique de la marque</h2>
-      <p class="mb-3 muted">
-        YUHWA est une marque de skincare coréenne positionnée dans le segment ultra-premium. Elle propose des formules fondées sur la fermentation traditionnelle hanbang
-        et des développements biotechnologiques contemporains. La promesse de la marque est d'offrir un rituel sensoriel et une efficacité clinique : la peau retrouve un équilibre
-        visible, durable et élégant.
+      <h2 class="text-2xl font-semibold mb-3">Présentation synthétique</h2>
+      <p class="muted">
+        YUHWA est une marque de soins coréens positionnée en ultra-premium. Elle propose des formules issues d'une fermentation traditionnelle hanbang
+        longue durée couplée à des développements biotech contemporains. La promesse : un rituel sensoriel et des résultats cliniquement mesurables, offrant
+        une peau plus équilibrée et lumineuse.
       </p>
 
       <div class="grid md:grid-cols-2 gap-4 mt-4">
         <div>
           <h3 class="font-medium">Positionnement</h3>
-          <p class="muted text-sm">Luxe scientifique enraciné dans un héritage coréen — clientèle exigeante prête à investir pour des résultats prouvés.</p>
+          <p class="muted text-sm">Luxe scientifique enraciné dans un héritage coréen — pour une clientèle exigeante investissant dans l'efficacité et l'expérience.</p>
         </div>
         <div>
           <h3 class="font-medium">Cible</h3>
-          <p class="muted text-sm">Femmes 30–50 ans, CSP+, sensibilisées aux routines K-beauty et attentives aux preuves d'efficacité (essais cliniques, études d'ingrédients).</p>
+          <p class="muted text-sm">Femmes 30–50 ans, CSP+, utilisatrices confirmées de routines K-beauty, sensibles à la transparence et aux preuves d'efficacité.</p>
         </div>
       </div>
 
       <div class="mt-4 grid md:grid-cols-3 gap-3">
         <div class="p-4 border rounded">
           <div class="text-sm muted">Prix indicatif</div>
-          <div class="font-semibold">Sérum 30ml : 150–180 €</div>
+          <div class="font-semibold">Sérum 30 ml : 150–180 €</div>
         </div>
         <div class="p-4 border rounded">
           <div class="text-sm muted">Concept clé</div>
@@ -76,79 +84,68 @@
         </div>
         <div class="p-4 border rounded">
           <div class="text-sm muted">Ton & discours</div>
-          <div class="font-semibold">Sérieux, accessible, expert sans jargon excessif</div>
+          <div class="font-semibold">Sérieux, expert, clair</div>
         </div>
       </div>
     </section>
 
     <!-- Processus de création -->
     <section class="mb-8 card p-6">
-      <h2 class="text-2xl font-semibold mb-3">Processus de création de la marque</h2>
+      <h2 class="text-2xl font-semibold mb-3">Processus de création</h2>
 
-      <article class="mb-4">
-        <h3 class="font-medium">Origine de l'idée</h3>
-        <p class="muted text-sm">
-          L'idée est née d'une observation : les consommatrices haut de gamme doivent souvent choisir entre marques traditionnelles (valeur patrimoniale) et marques
-          biotech (efficacité mesurable). Le constat stratégique retenu : il existe un espace de marché pour une marque qui fédère authenticité culturelle et rigueur scientifique,
-          tout en proposant un rituel premium. Ce positionnement répond à une demande croissante pour des produits transparents, narratifs et soutenus par la science.
-        </p>
-      </article>
+      <h3 class="font-medium">Comment l'idée est née</h3>
+      <p class="muted text-sm mb-3">
+        Observation marché : les consommatrices haut de gamme doivent souvent choisir entre marques patrimoniales (héritage) et marques biotech (preuves cliniques).
+        YUHWA répond à ce constat en combinant un récit culturel fort (hanbang, fermentation) et une démarche scientifique rigoureuse (actifs brevetés, essais cliniques),
+        pour créer un rituel performant et désirable.
+      </p>
 
-      <article class="mb-4">
-        <h3 class="font-medium">Signification du nom</h3>
-        <p class="muted text-sm">
-          <strong>YUHWA</strong reprend la graphie coréenne 유화. Le choix du nom se veut double : d'un point de vue sémantique, il évoque la douceur et l'harmonie (caractères coréens/hanja fréquents : <em>柔</em> pour "doux" / "souple" et <em>和</em> pour "harmonie"), et d'un point de vue culturel il renvoie à la tradition (référence mythologique de Yuhwa dans les récits coréens — filiation, origine). Le nom sonne aussi sobre et mémorisable sur les marchés internationaux.
-        </p>
-      </article>
+      <h3 class="font-medium">Que veut dire le nom</h3>
+      <p class="muted text-sm mb-3">
+        Le nom <strong>YUHWA</strong> reprend la graphie coréenne 유화. Sur le plan sémantique, il renvoie à la douceur et à l'harmonie (caractères hanja fréquents : <em>柔</em> — "doux", <em>和</em> — "harmonie").
+        Il renvoie aussi, par résonance culturelle, à des figures mythologiques coréennes (origine, filiation) — ce qui renforce la légitimité narrative de la marque.
+      </p>
 
-      <article>
-        <h3 class="font-medium">Choix du slogan</h3>
-        <p class="muted text-sm">
-          Le slogan <strong>"L'équilibre réinventé"</strong> explicite la promesse produit : retrouver l'équilibre cutané par une combinaison inédite de pratiques traditionnelles et d'innovation.
-          Le verbe "réinventer" indique que la marque respecte l'héritage tout en le remettant en contexte contemporain (design, preuves cliniques, traçabilité).
-        </p>
-      </article>
+      <h3 class="font-medium">Choix du slogan</h3>
+      <p class="muted text-sm">
+        Le slogan <strong>"L'équilibre réinventé"</strong> explicite la promesse : retrouver l'équilibre cutané par la rencontre de pratiques traditionnelles et d'innovation contemporaine.
+        "Réinventé" indique respect et modernisation, utile pour la communication produit et institutionnelle.
+      </p>
     </section>
 
-    <!-- Gamme & packaging -->
+    <!-- Gamme -->
     <section class="mb-8 card p-6">
       <h2 class="text-2xl font-semibold mb-3">Gamme signature et expérience</h2>
-      <p class="muted text-sm mb-4">
-        La première ligne comporte trois produits phares, pensés pour structurer un rituel en trois temps : préparer, traiter, sceller.
-      </p>
+      <p class="muted text-sm mb-4">Rituel en trois étapes : préparer, traiter, sceller.</p>
 
       <ul class="space-y-3">
         <li class="p-4 border rounded">
           <div class="font-medium">Essence Fermentée — 100 ml</div>
-          <div class="muted text-sm">Prépare la peau et active la microcirculation. Ferments de racines hanbang et prébiotiques. Prix indicatif : 140–160 €.</div>
+          <div class="muted text-sm">Prépare la peau et active l'éclat. Mélange de ferments hanbang et prébiotiques. Prix : 140–160 €.</div>
         </li>
         <li class="p-4 border rounded">
           <div class="font-medium">Sérum Peptide Complex — 30 ml</div>
-          <div class="muted text-sm">Concentré d'actifs biomimétiques pour fermeté et éclat. Tests cliniques : réduction visible des rides en 8 semaines. Prix indicatif : 160–180 €.</div>
+          <div class="muted text-sm">Concentré biomimétique pour fermeté et éclat. Résultats visibles en 8 semaines (protocole clinique). Prix : 160–180 €.</div>
         </li>
         <li class="p-4 border rounded">
           <div class="font-medium">Crème Barrière — 50 ml</div>
-          <div class="muted text-sm">Céramides structurés et lipides fermentés pour restaurer la barrière cutanée. Prix indicatif : 120–140 €.</div>
+          <div class="muted text-sm">Céramides structurés et lipides fermentés pour restaurer la barrière. Prix : 120–140 €.</div>
         </li>
       </ul>
 
       <div class="mt-4 muted text-sm">
-        <strong>Packaging</strong> : verre ambré recyclé, bouchon métal brossé, insert papier texturé rappelant la soie du hanbok. Le design mise sur la sobriété et la matérialité.
+        <strong>Packaging</strong> : verre ambré recyclé, bouchon métal brossé, insert papier texturé évoquant la soie du hanbok — sobriété et matérialité au service de la valeur perçue.
       </div>
     </section>
 
-    <!-- Positionnement concurrentiel (map simplifiée) -->
+    <!-- Cartographie concurrentielle -->
     <section class="mb-8 card p-6">
-      <h2 class="text-2xl font-semibold mb-3">Positionnement concurrentiel — cartographie simplifiée</h2>
-      <p class="muted text-sm mb-4">
-        Sur un axe Tradition — Science et un axe Prix Bas — Prix Élevé, YUHWA se place sur le quadrant Tradition+Prix Élevé tout en glissant vers Science (fusion).
-      </p>
+      <h2 class="text-2xl font-semibold mb-3">Cartographie concurrentielle (simplifiée)</h2>
+      <p class="muted text-sm mb-4">Axes : Tradition ←→ Science et Prix élevé ←→ Prix bas. YUHWA occupe un espace Premium, traditionnel mais orienté preuve scientifique.</p>
 
       <div class="bg-gray-50 rounded p-4">
-        <!-- SVG simplifié -->
-        <svg viewBox="0 0 600 360" class="w-full h-60">
-          <rect x="0" y="0" width="600" height="360" fill="#ffffff" />
-          <!-- axes -->
+        <svg viewBox="0 0 600 360" class="w-full h-60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cartographie concurrentielle">
+          <rect width="600" height="360" fill="#ffffff"/>
           <line x1="50" y1="40" x2="50" y2="320" stroke="#e5e7eb" stroke-width="2"/>
           <line x1="50" y1="320" x2="550" y2="320" stroke="#e5e7eb" stroke-width="2"/>
           <text x="45" y="30" font-size="12" fill="#6b7280">Prix élevé</text>
@@ -156,47 +153,42 @@
           <text x="10" y="200" transform="rotate(-90 10,200)" font-size="12" fill="#6b7280">Tradition</text>
           <text x="560" y="200" transform="rotate(90 560,200)" font-size="12" fill="#6b7280">Science</text>
 
-          <!-- YUHWA -->
           <circle cx="220" cy="90" r="28" fill="#8a6f55" />
           <text x="220" y="95" font-size="12" fill="#fff" text-anchor="middle" font-weight="600">YUHWA</text>
           <text x="220" y="115" font-size="11" fill="#6b7280" text-anchor="middle">Équilibre</text>
 
-          <!-- Concurrents représentatifs -->
-          <circle cx="140" cy="140" r="22" fill="#d97706" opacity="0.9" />
+          <circle cx="140" cy="140" r="22" fill="#d97706" opacity="0.95"/>
           <text x="140" y="145" font-size="11" fill="#fff" text-anchor="middle">Sulwhasoo</text>
 
-          <circle cx="350" cy="110" r="22" fill="#ef4444" opacity="0.9" />
+          <circle cx="350" cy="110" r="22" fill="#ef4444" opacity="0.95"/>
           <text x="350" y="115" font-size="11" fill="#fff" text-anchor="middle">Amorepacific</text>
 
-          <circle cx="160" cy="240" r="18" fill="#f97316" opacity="0.9" />
+          <circle cx="160" cy="240" r="18" fill="#f97316" opacity="0.95"/>
           <text x="160" y="245" font-size="11" fill="#fff" text-anchor="middle">Hanyul</text>
 
-          <circle cx="430" cy="240" r="18" fill="#7c3aed" opacity="0.9" />
+          <circle cx="430" cy="240" r="18" fill="#7c3aed" opacity="0.95"/>
           <text x="430" y="245" font-size="11" fill="#fff" text-anchor="middle">Neogen</text>
         </svg>
       </div>
 
       <div class="mt-4 muted text-sm">
-        <strong>Insight stratégique</strong> : il existe un espace différenciant pour une communication qui met à la fois l'authenticité du rituel et la preuve scientifique (packaging, récits d'ingrédients, datavisualisation des essais cliniques).
+        <strong>Insight</strong> : communiquer sur la double preuve — récit patrimonial + données cliniques — pour convaincre la clientèle premium.
       </div>
     </section>
 
-    <!-- Prisme de Kapferer — forme traditionnelle -->
+    <!-- Prisme de Kapferer (formalisme traditionnel) -->
     <section class="mb-12 card p-6">
-      <h2 class="text-2xl font-semibold mb-3">Prisme d'identité de Kapferer (forme traditionnelle)</h2>
-      <p class="muted text-sm mb-4">
-        Présentation classique des six facettes : Physique, Personnalité, Culture, Relation, Reflet, Mentalisation. Chaque bloc reprend l'essentiel à utiliser dans la communication de marque et les livrables.
-      </p>
+      <h2 class="text-2xl font-semibold mb-3">Prisme de Kapferer (format traditionnel)</h2>
+      <p class="muted text-sm mb-4">Six facettes à utiliser comme grille de travail pour briefs, storytelling et outils commerciaux.</p>
 
       <div class="prism-grid">
         <!-- Physique -->
         <div class="p-4 border rounded">
           <h4 class="font-semibold mb-2">Physique</h4>
           <ul class="text-sm muted space-y-1">
-            <li>Formules fermentées longue durée (transparence sur protocole)</li>
-            <li>Textures sensorielles, pénétration rapide</li>
-            <li>Packaging verre ambré, esthétique minimaliste</li>
-            <li>Senteur discrète inspirée des jardins coréens</li>
+            <li>Formules fermentées longue durée, transparence protocole</li>
+            <li>Textures précieuses et pénétration efficace</li>
+            <li>Packaging verre ambré, minimaliste</li>
           </ul>
         </div>
 
@@ -205,8 +197,7 @@
           <h4 class="font-semibold mb-2">Personnalité</h4>
           <ul class="text-sm muted space-y-1">
             <li>Calme, cultivée, exigeante</li>
-            <li>Révérente envers la tradition mais audacieuse scientifiquement</li>
-            <li>Clarté des preuves et élégance du discours</li>
+            <li>Autorité experte sans arrogance</li>
           </ul>
         </div>
 
@@ -214,9 +205,8 @@
         <div class="p-4 border rounded">
           <h4 class="font-semibold mb-2">Culture</h4>
           <ul class="text-sm muted space-y-1">
-            <li>Valeurs : patience, maîtrise artisanale, rigueur scientifique</li>
-            <li>Héritage coréen comme fond de narration</li>
-            <li>Approche durable et traçabilité des matières premières</li>
+            <li>Héritage hanbang, patience, maîtrise artisanale</li>
+            <li>Rigueur scientifique et éthique</li>
           </ul>
         </div>
 
@@ -224,9 +214,8 @@
         <div class="p-4 border rounded">
           <h4 class="font-semibold mb-2">Relation</h4>
           <ul class="text-sm muted space-y-1">
-            <li>Relation pédagogique et consultative (éducation produits)</li>
-            <li>Service client premium — diagnostics personnalisés</li>
-            <li>Communauté d'utilisatrices ambassade (contenu co-créé)</li>
+            <li>Relation pédagogique et de transmission</li>
+            <li>Services premium : diagnostic, conseils personnalisés</li>
           </ul>
         </div>
 
@@ -234,8 +223,7 @@
         <div class="p-4 border rounded">
           <h4 class="font-semibold mb-2">Reflet</h4>
           <ul class="text-sm muted space-y-1">
-            <li>Clientèle perçue : femmes instruits, cosmopolites, élégantes</li>
-            <li>Image : personne qui valorise le savoir et le soin de soi</li>
+            <li>Cliente perçue : cosmopolite, instruite, élégante</li>
           </ul>
         </div>
 
@@ -243,30 +231,29 @@
         <div class="p-4 border rounded">
           <h4 class="font-semibold mb-2">Mentalisation</h4>
           <ul class="text-sm muted space-y-1">
-            <li>Sentiment : faire partie d'un cercle d'initiées</li>
-            <li>Émotion : confiance et fierté de prendre soin de soi avec sens</li>
-            <li>Perception : efficacité éprouvée, soin réfléchi</li>
+            <li>Sentiment d'appartenance à un cercle d'initiées</li>
+            <li>Fierté d'utiliser un soin à la fois culturel et scientifique</li>
           </ul>
         </div>
       </div>
 
       <div class="mt-4 muted text-sm">
-        <strong>Notes d'usage</strong> : utiliser ces facettes comme checklist lors de la rédaction des briefs créatifs, de l'élaboration d'un guide de style ou d'un script de formation commerciale.
+        Utilise ces blocs comme checklist pour briefs créatifs, fiches produit et scripts commerciaux.
       </div>
     </section>
 
-    <!-- Call-to-action / exports -->
+    <!-- CTA / exports -->
     <section class="mb-8 card p-6 text-center">
       <h3 class="font-semibold mb-2">Livrables recommandés</h3>
-      <p class="muted text-sm mb-4">Pour la suite du travail (présentation, moodboard, guidelines) : préparer un deck Slides (10–12 slides), un moodboard visuel et un guide tonalité 1 page.</p>
-      <div class="inline-flex gap-3">
-        <a href="#" class="px-4 py-2 rounded border">Télécharger le brief (PDF)</a>
-        <a href="#" class="px-4 py-2 rounded bg-gray-900 text-white">Créer un moodboard</a>
+      <p class="muted text-sm mb-4">Pour la suite : deck (10–12 slides), moodboard visuel, guide tonalité 1 page, fiche produit 1 page par SKU.</p>
+      <div class="inline-flex gap-3 justify-center">
+        <a class="button" href="#" onclick="alert('Téléchargement non configuré dans la version prototype')">Télécharger le brief (PDF)</a>
+        <a class="button" href="#" onclick="alert('Prototype : création de moodboard non activée')">Créer un moodboard</a>
       </div>
     </section>
 
     <footer class="text-center muted text-sm">
-      Document préparé comme livrable pédagogique — adapté pour un rendu étudiant en communication & marketing.
+      Document prêt pour rendu pédagogique — adapté au niveau Bachelor communication & marketing.
     </footer>
   </main>
 </body>
